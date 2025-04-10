@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <!-- Hero Section -->
+     <style>/* Home Hero Section */
+        .home-hero {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 4rem 2rem;
+            background-color: #f8f9fa;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .cta-button {
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button.primary {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .cta-button.secondary {
+            border: 2px solid #3498db;
+            color: #3498db;
+            background-color: transparent;
+        }
+        
+        .cta-button.primary:hover {
+            background-color: #2980b9;
+        }
+        
+        .cta-button.secondary:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .hero-image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Services Preview */
+        .services-preview {
+            padding: 4rem 2rem;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-card {
+            padding: 2rem;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+        
+        .service-link {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .service-link:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        /* Client Showcase */
+        .client-showcase {
+            padding: 3rem 2rem;
+            background-color: #2c3e50;
+            color: white;
+        }
+        
+        .client-showcase .section-title {
+            color: white;
+        }
+        
+        .client-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .client-logos img {
+            height: 60px;
+            width: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        
+        .client-logos img:hover {
+            opacity: 1;
+        }
+        
+        /* Testimonial Highlight */
+        .testimonial-highlight {
+            padding: 4rem 2rem;
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+        }
+        
+        .testimonial-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial-content blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .testimonial-content cite {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 900px) {
+            .home-hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .hero-image {
+                order: -1;
+                max-width: 80%;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .hero-buttons {
+                flex-direction: column;
+            }
+            
+            .client-logos {
+                gap: 1.5rem;
+            }
+            
+            .client-logos img {
+                height: 40px;
+            }
+        }</style>
+<section class="home-hero">
+    <div class="hero-content">
+        <h1>Creative Web Solutions for Your Business</h1>
+        <p class="hero-subtitle">We design and develop stunning websites that drive results</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="cta-button primary">Get Started</a>
+            <a href="#services" class="cta-button secondary">Our Services</a>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Web development illustration">
+    </div>
+</section>
+
+<!-- Services Preview -->
+<section class="services-preview">
+    <h2 class="section-title">What We Offer</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Design</h3>
+            <p>Beautiful, user-friendly designs tailored to your brand</p>
+            <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Mobile Development</h3>
+            <p>Responsive designs that work perfectly on any device</p>
+            <a href="#" class="service-link">Learn more →</a>
+        </div>
+        <div class="service-card">
+            <div class="service-icon">🔍</div>
+            <h3>SEO Optimization</h3>
+            <p>Get found by your ideal customers online</p>
+            <a href="#" class="service-link">Learn more →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Client Showcase -->
+<section class="client-showcase">
+    <h2 class="section-title">Trusted By</h2>
+    <div class="client-logos">
+        <img src="https://via.placeholder.com/150x60?text=Client+1" alt="Client logo">
+        <img src="https://via.placeholder.com/150x60?text=Client+2" alt="Client logo">
+        <img src="https://via.placeholder.com/150x60?text=Client+3" alt="Client logo">
+        <img src="https://via.placeholder.com/150x60?text=Client+4" alt="Client logo">
+    </div>
+</section>
+
+<!-- Testimonial Highlight -->
+<section class="testimonial-highlight">
+    <div class="testimonial-content">
+        <blockquote>
+            "Working with this team transformed our online presence. Our website traffic increased by 200% in just three months!"
+        </blockquote>
+        <cite>- Sarah Johnson, Marketing Director</cite>
+    </div>
+</section>
+</body>

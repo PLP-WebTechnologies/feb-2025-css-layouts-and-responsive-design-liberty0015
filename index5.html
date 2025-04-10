@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <!-- Services Page Content -->
+     <style>/* Services Page Styles */
+        .services-header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .services-header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .services-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .services-main {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .service-categories {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        
+        .service-category {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 2rem;
+        }
+        
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+        
+        .service-category h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-item {
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+        
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        
+        .service-item h3 {
+            color: #3498db;
+            margin-bottom: 0.8rem;
+        }
+        
+        .service-features {
+            margin-top: 1rem;
+            padding-left: 1.2rem;
+        }
+        
+        .service-features li {
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        
+        .service-process {
+            background-color: #f8f9fa;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .service-process h2 {
+            color: #2c3e50;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .step {
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: #3498db;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        
+        .step h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-cta {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .service-cta h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .service-cta p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 0.9rem 2rem;
+            background-color: white;
+            color: #3498db;
+            border-radius: 4px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-header {
+                padding: 3rem 1rem;
+            }
+        }</style>
+<section class="services-header">
+    <div class="header-content">
+        <h1>Our Professional Services</h1>
+        <p>We deliver comprehensive digital solutions tailored to your business needs</p>
+    </div>
+</section>
+
+<section class="services-main">
+    <div class="service-categories">
+        <!-- Web Development Service -->
+        <div class="service-category">
+            <div class="service-icon">💻</div>
+            <h2>Web Development</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Custom Website Development</h3>
+                    <p>Bespoke websites built from scratch to your exact specifications</p>
+                    <ul class="service-features">
+                        <li>Responsive design</li>
+                        <li>CMS integration</li>
+                        <li>SEO-friendly structure</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>E-Commerce Solutions</h3>
+                    <p>Complete online store setups with payment processing</p>
+                    <ul class="service-features">
+                        <li>Shopify/WooCommerce</li>
+                        <li>Product management</li>
+                        <li>Secure checkout</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Design Service -->
+        <div class="service-category">
+            <div class="service-icon">🎨</div>
+            <h2>Design Services</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered interfaces that enhance engagement</p>
+                    <ul class="service-features">
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>User testing</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Brand Identity</h3>
+                    <p>Complete visual identity packages</p>
+                    <ul class="service-features">
+                        <li>Logo design</li>
+                        <li>Color palettes</li>
+                        <li>Brand guidelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Digital Marketing Service -->
+        <div class="service-category">
+            <div class="service-icon">📈</div>
+            <h2>Digital Marketing</h2>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>SEO Services</h3>
+                    <p>Improve your search engine rankings organically</p>
+                    <ul class="service-features">
+                        <li>Keyword research</li>
+                        <li>On-page optimization</li>
+                        <li>Content strategy</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Social Media Management</h3>
+                    <p>Complete handling of your social presence</p>
+                    <ul class="service-features">
+                        <li>Content creation</li>
+                        <li>Community engagement</li>
+                        <li>Performance analytics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-process">
+    <h2>Our Working Process</h2>
+    <div class="process-steps">
+        <div class="step">
+            <div class="step-number">1</div>
+            <h3>Discovery</h3>
+            <p>We learn about your business and goals</p>
+        </div>
+        <div class="step">
+            <div class="step-number">2</div>
+            <h3>Planning</h3>
+            <p>We create a detailed project roadmap</p>
+        </div>
+        <div class="step">
+            <div class="step-number">3</div>
+            <h3>Execution</h3>
+            <p>Our team brings the solution to life</p>
+        </div>
+        <div class="step">
+            <div class="step-number">4</div>
+            <h3>Delivery</h3>
+            <p>We launch and provide ongoing support</p>
+        </div>
+    </div>
+</section>
+
+<section class="service-cta">
+    <h2>Ready to Transform Your Digital Presence?</h2>
+    <p>Get in touch to discuss how we can help your business grow</p>
+    <a href="#contact" class="cta-button">Get a Free Consultation</a>
+</section>
+</body>

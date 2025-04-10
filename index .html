@@ -1,0 +1,108 @@
+<!-- Add this section before the closing </main> tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+    <style>/* Contact Information Section */
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info h2 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-card {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+        
+        .contact-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .contact-card a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }</style>
+    <section class="contact-info">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email</h3>
+                <p>isaacadoyi8@gmail.com</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">📱</div>
+                <h3>Phone</h3>
+                <p>+2347048505948</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">🏢</div>
+                <h3>Address</h3>
+                <p>123 Business Street<br>orokam<br>benue States, Nigeria</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">🕒</div>
+                <h3>Hours</h3>
+                <p>Monday-Friday: 9AM-5PM<br>Saturday: 10AM-2PM<br>Sunday: Closed</p>
+            </div>
+    </div>
+      </section>
+<body>
